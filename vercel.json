@@ -15,11 +15,6 @@
     "env": {
       "DATABASE_URL": "mongodb+srv://digitalmanager:T7kXJsjbiMMVje1I@abroadeducares.zb72w.mongodb.net/?retryWrites=true&w=majority&appName=AbroadEducares"
     },
-    "functions": {
-      "index.js": {
-        "memory": 512,
-        "maxDuration": 10
-      }
-    }
+   
   }
   
