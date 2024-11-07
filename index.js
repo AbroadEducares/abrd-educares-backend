@@ -3,9 +3,13 @@ const cors = require('cors');
 const { dbconnect } = require('./config/database');
 
 const app = express();
-app.use(cors(
-    origin='*'
-));
+const corsOptions = {
+    origin: ['http://your-frontend-domain.com', 'http://localhost:3000'], // Add your frontend URLs here
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+  };
+  
+  app.use(cors(corsOptions));
 app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
