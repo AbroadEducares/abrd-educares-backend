@@ -25,7 +25,7 @@ app.use('/api/v1', agentRoutes);
 app.use('/api/v1', EduFairRoutes);
 
 app.get('/', (req, res) => {
-    res.send('Welcome to the Edufair API');
+    res.send('Welcome to the Edufair API, Hi1');
 }
 );
 app.listen(PORT, () => {
