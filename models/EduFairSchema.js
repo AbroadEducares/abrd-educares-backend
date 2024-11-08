@@ -23,7 +23,7 @@ const EduFairSchema = new mongoose.Schema({
     },
     lastLevelOfStudy: {
         type: String,
-        enum: ["+2 (pursuing/passout)", "Graduation", "Post graduation & above"],
+        enum: ["+2 (pursuing/passout)", "Graduation", "Post Graduation & above"],
         required: true
     },
     date: {
