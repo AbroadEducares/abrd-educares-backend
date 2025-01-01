@@ -17,7 +17,7 @@ const EnquiryFormSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    comment: {
+    comments: {
         type: String,
     },
     date: {
