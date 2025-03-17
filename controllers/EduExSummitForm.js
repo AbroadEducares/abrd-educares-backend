@@ -1,6 +1,6 @@
-const EduExSummitForm = require("../models/EduExSummitFormSchema"); // Import the model correctly
+const EduExSummitForm = require("../models/EduExSummitFormSchema"); 
 
-exports.EduExSummitForm = async (req, res) => {
+exports.createEduExSummitForm = async (req, res) => {
   try {
     const newEduExSummitForm = new EduExSummitForm(req.body); 
     await newEduExSummitForm.save(); 
