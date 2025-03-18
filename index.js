@@ -7,7 +7,7 @@ const app = express();
 // ✅ Allow specific frontend origin for production
 app.use(
   cors({
-    origin: ['http://abroadeducares.com'],
+    origin: ['https://abroadeducares.com'],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
